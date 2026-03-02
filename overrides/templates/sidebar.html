@@ -1,0 +1,48 @@
+<div view-transition-name="sidebar" data-slot="sidebar-group" data-sidebar="group"
+    class="relative flex w-full min-w-0 flex-col p-2 no-scrollbar">
+    {% if nav|length > 1 %}
+
+    {% if config.theme.topbar_sections %}
+    {% set current = nav|active_section|attr('children') %}
+    {% else %}
+    {% set current = nav %}
+    {% endif %}
+
+    {% if not current %}
+    {% set current = nav|selectattr("is_page") %}
+    {% endif %}
+
+    {% macro render_items(items, top_level=false) %}
+    {% for item in items if item.is_page %}
+    {% with sidebar_item = item %}
+    {% include "components/sidebar_item.html" %}
+    {% endwith %}
+    {% endfor %}
+    {% for section in items if not section.is_page and section.children %}
+    <li data-slot="sidebar-menu-item" data-sidebar="menu-item" class="relative">
+        <details class="sidebar-section"{% if section.active or top_level %} open{% endif %}>
+            <summary class="flex cursor-pointer list-none items-center gap-2 rounded-md px-2 h-[30px] text-[0.8rem] font-medium text-muted-foreground hover:bg-sidebar-accent hover:text-sidebar-accent-foreground transition-colors [&::-webkit-details-marker]:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="sidebar-chevron shrink-0">
+                    <path d="m9 18 6-6-6-6"/>
+                </svg>
+                {{ section.title }}
+            </summary>
+            <ul data-slot="sidebar-menu" data-sidebar="menu"
+                class="flex w-full min-w-0 flex-col gap-0.5">
+                {{ render_items(section.children) }}
+            </ul>
+        </details>
+    </li>
+    {% endfor %}
+    {% endmacro %}
+
+    <div data-slot="sidebar-group-content" data-sidebar="group-content" class="w-full text-sm">
+        <ul data-slot="sidebar-menu" data-sidebar="menu" class="flex w-full min-w-0 flex-col gap-0.5">
+            {{ render_items(current, top_level=true) }}
+        </ul>
+    </div>
+
+    {% endif %}
+</div>

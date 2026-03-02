@@ -1,0 +1,36 @@
+{
+  "port_signatures": {
+    "631": {"type": "printer", "confidence": 0.8},
+    "9100": {"type": "printer", "confidence": 0.75},
+    "515": {"type": "printer", "confidence": 0.75},
+    "9000,9080": {"type": "speaker", "subtype": "sonos", "confidence": 0.9},
+    "8008,8443": {"type": "streaming-stick", "subtype": "chromecast", "confidence": 0.85},
+    "62078": {"type": "smartphone", "subtype": "iphone", "confidence": 0.7},
+    "548": {"type": "nas", "confidence": 0.7},
+    "5000,5001": {"type": "nas", "subtype": "synology", "confidence": 0.8},
+    "32400": {"type": "media-server", "subtype": "plex", "confidence": 0.85},
+    "8096": {"type": "media-server", "subtype": "jellyfin", "confidence": 0.8}
+  },
+  "mdns_signatures": {
+    "_airplay._tcp": {"type": "media", "confidence": 0.85},
+    "_googlecast._tcp": {"type": "streaming-stick", "confidence": 0.9},
+    "_ipp._tcp": {"type": "printer", "confidence": 0.9},
+    "_printer._tcp": {"type": "printer", "confidence": 0.9},
+    "_homekit._tcp": {"type": "iot", "confidence": 0.7},
+    "_hap._tcp": {"type": "iot", "confidence": 0.7},
+    "_companion-link._tcp": {"type": "computing", "subtype": "apple", "confidence": 0.8},
+    "_smb._tcp": {"type": "computing", "confidence": 0.6},
+    "_spotify-connect._tcp": {"type": "speaker", "confidence": 0.8},
+    "_raop._tcp": {"type": "speaker", "confidence": 0.8}
+  },
+  "hostname_patterns": [
+    {"pattern": "^iPhone", "type": "smartphone", "os": "iOS", "confidence": 0.9},
+    {"pattern": "^iPad", "type": "tablet", "os": "iOS", "confidence": 0.9},
+    {"pattern": "^Galaxy|^SM-", "type": "smartphone", "os": "Android", "confidence": 0.85},
+    {"pattern": "^DESKTOP-", "type": "desktop", "os": "Windows", "confidence": 0.8},
+    {"pattern": "^MacBook", "type": "laptop", "os": "macOS", "confidence": 0.85},
+    {"pattern": "(?i)^NPI[A-F0-9]", "type": "printer", "confidence": 0.8},
+    {"pattern": "^ESP_", "type": "iot", "confidence": 0.7},
+    {"pattern": "(?i)^raspberrypi", "type": "server", "os": "Linux", "confidence": 0.7}
+  ]
+}

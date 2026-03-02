@@ -1,0 +1,114 @@
+# netglance
+
+> Home network health checks — run by you or your AI. Find every device, check your DNS, measure speed, detect threats. From your terminal or any MCP-compatible AI assistant.
+
+## Home
+
+- [Home](https://timainge.github.io/netglance/): Installation, quick start, and usage modes overview.
+
+## Guides
+
+- [Guides Index](https://timainge.github.io/netglance/guide/): Overview of all guides and learning resources.
+
+### Practical Guides
+
+- [What's on My Network?](https://timainge.github.io/netglance/guide/practical/whats-on-my-network/): Find every connected device, identify mystery gadgets, and catch unauthorized access.
+- [Is My Internet Slow?](https://timainge.github.io/netglance/guide/practical/is-my-internet-slow/): Test speed, latency, and bufferbloat. Find out if the problem is your WiFi, ISP, or something else.
+- [Am I Being Watched?](https://timainge.github.io/netglance/guide/practical/am-i-being-watched/): Check for DNS leaks, traffic interception, ARP spoofing, and VPN leaks.
+- [Is My Wi-Fi Secure?](https://timainge.github.io/netglance/guide/practical/is-my-wifi-secure/): Audit encryption, find rogue access points, and lock down your wireless network.
+- [Set Up Alerts](https://timainge.github.io/netglance/guide/practical/alerting-in-practice/): Configure monitoring and alerting for continuous network surveillance.
+- [Keep My Network Healthy](https://timainge.github.io/netglance/guide/practical/keep-my-network-healthy/): Set up continuous monitoring, baselines, and alerts so you know the moment something changes.
+
+### Concepts - Basics
+
+- [How Networks Work](https://timainge.github.io/netglance/guide/concepts/how-networks-work/): Foundational concepts about networking.
+- [ARP and MAC Addresses](https://timainge.github.io/netglance/guide/concepts/arp-and-mac-addresses/): Understanding Address Resolution Protocol and MAC addressing.
+- [Ports and Services](https://timainge.github.io/netglance/guide/concepts/ports-and-services/): How ports work and what services run on them.
+- [DNS Explained](https://timainge.github.io/netglance/guide/concepts/dns-explained/): Domain Name System fundamentals and resolution.
+
+### Concepts - Security & Privacy
+
+- [TLS and Certificates](https://timainge.github.io/netglance/guide/concepts/tls-and-certificates/): Encryption, certificates, and HTTPS security.
+- [Wi-Fi Security](https://timainge.github.io/netglance/guide/concepts/wifi-security/): Wireless security protocols and best practices.
+- [Firewalls and NAT](https://timainge.github.io/netglance/guide/concepts/firewalls-and-nat/): Firewall rules and Network Address Translation.
+- [VPN Fundamentals](https://timainge.github.io/netglance/guide/concepts/vpn-fundamentals/): Virtual Private Networks and leak detection.
+
+### Concepts - Deep Dives
+
+- [DHCP How It Works](https://timainge.github.io/netglance/guide/concepts/dhcp-how-it-works/): Dynamic Host Configuration Protocol and device provisioning.
+- [IPv6 Primer](https://timainge.github.io/netglance/guide/concepts/ipv6-primer/): Next-generation IP protocol and adoption.
+- [Device Fingerprinting](https://timainge.github.io/netglance/guide/concepts/device-fingerprinting/): Identifying devices by OS and service signatures.
+- [Network Performance](https://timainge.github.io/netglance/guide/concepts/network-performance/): Latency, bandwidth, and performance metrics.
+
+### Interpreting Results
+
+- [Reading Reports](https://timainge.github.io/netglance/guide/interpreting-results/reading-reports/): Understanding netglance output and reports.
+- [When to Worry](https://timainge.github.io/netglance/guide/interpreting-results/when-to-worry/): Identifying serious issues versus minor findings.
+- [Common Findings](https://timainge.github.io/netglance/guide/interpreting-results/common-findings/): Interpreting common network findings.
+- [Remediation Playbook](https://timainge.github.io/netglance/guide/interpreting-results/remediation-playbook/): Fixing identified issues step-by-step.
+
+## Documentation
+
+- [Documentation Index](https://timainge.github.io/netglance/reference/): Technical reference and command documentation.
+- [Getting Started](https://timainge.github.io/netglance/reference/getting-started/): Installation, initial setup, and first commands.
+- [Security](https://timainge.github.io/netglance/reference/security/): Security model, authentication, CORS, input validation, and privilege model.
+
+### Usage Modes
+
+- [Usage Modes Overview](https://timainge.github.io/netglance/reference/usage-modes/): Compare interactive CLI, MCP, daemon, and deployment options.
+- [Interactive CLI](https://timainge.github.io/netglance/reference/usage-modes/cli/): Run commands ad-hoc from your terminal.
+- [AI Agent (MCP)](https://timainge.github.io/netglance/reference/usage-modes/mcp/): Use netglance with Claude, Cursor, or VS Code.
+- [Background Daemon](https://timainge.github.io/netglance/reference/usage-modes/daemon/): Continuous monitoring on macOS.
+- [Dedicated Monitor](https://timainge.github.io/netglance/reference/usage-modes/dedicated/): 24/7 monitoring on Raspberry Pi, Mac Mini, or Docker.
+- [Scheduled Checks](https://timainge.github.io/netglance/reference/usage-modes/scheduled/): Lightweight cron jobs on Linux.
+
+### Discovery & Inventory
+
+- [Discover](https://timainge.github.io/netglance/reference/tools/discover/): Find devices on your network.
+- [Scan](https://timainge.github.io/netglance/reference/tools/scan/): Port scanning and service enumeration.
+- [Identify](https://timainge.github.io/netglance/reference/tools/identify/): Device OS and service fingerprinting.
+- [Export](https://timainge.github.io/netglance/reference/tools/export/): Export data in JSON, CSV, or HTML formats.
+- [Baseline](https://timainge.github.io/netglance/reference/tools/baseline/): Snapshot and diff your network state.
+
+### Connection Testing
+
+- [Ping](https://timainge.github.io/netglance/reference/tools/ping/): Test connectivity and measure latency.
+- [Speed](https://timainge.github.io/netglance/reference/tools/speed/): Bandwidth speed testing.
+- [Performance](https://timainge.github.io/netglance/reference/tools/perf/): Network performance benchmarking.
+- [Route](https://timainge.github.io/netglance/reference/tools/route/): Traceroute and path analysis.
+- [Uptime](https://timainge.github.io/netglance/reference/tools/uptime/): Host uptime monitoring.
+- [Traffic](https://timainge.github.io/netglance/reference/tools/traffic/): Bandwidth monitoring and analysis.
+
+### Security
+
+- [DNS](https://timainge.github.io/netglance/reference/tools/dns/): DNS health and leak detection.
+- [ARP](https://timainge.github.io/netglance/reference/tools/arp/): ARP table monitoring and MITM detection.
+- [TLS](https://timainge.github.io/netglance/reference/tools/tls/): TLS certificate verification.
+- [HTTP](https://timainge.github.io/netglance/reference/tools/http/): HTTP header and proxy detection.
+- [VPN](https://timainge.github.io/netglance/reference/tools/vpn/): VPN leak detection.
+- [DHCP](https://timainge.github.io/netglance/reference/tools/dhcp/): DHCP analysis and security.
+- [Firewall](https://timainge.github.io/netglance/reference/tools/firewall/): Firewall rule auditing.
+- [IPv6](https://timainge.github.io/netglance/reference/tools/ipv6/): IPv6 connectivity and analysis.
+- [Wi-Fi](https://timainge.github.io/netglance/reference/tools/wifi/): Wireless environment analysis.
+
+### Monitoring & Alerts
+
+- [Report](https://timainge.github.io/netglance/reference/tools/report/): Aggregate health report generation.
+- [Metrics](https://timainge.github.io/netglance/reference/tools/metrics/): Collect and view network metrics.
+- [Alerts](https://timainge.github.io/netglance/reference/tools/alert/): Alerting rules and notifications.
+- [Daemon](https://timainge.github.io/netglance/reference/tools/daemon/): Background monitoring daemon.
+
+### Utilities
+
+- [Wake-on-LAN](https://timainge.github.io/netglance/reference/tools/wol/): Wake devices on your network.
+
+### AI Integration
+
+- [MCP Server](https://timainge.github.io/netglance/reference/tools/mcp/): Model Context Protocol integration for AI agents.
+
+### Deployment
+
+- [Raspberry Pi](https://timainge.github.io/netglance/reference/deployment/raspberry-pi/): Deploy netglance on Raspberry Pi.
+- [Mac Mini Daemon](https://timainge.github.io/netglance/reference/deployment/mac-mini-daemon/): Set up as macOS background service.
+- [Docker](https://timainge.github.io/netglance/reference/deployment/docker/): Containerized deployment.
+- [Scheduling](https://timainge.github.io/netglance/reference/deployment/scheduling/): Configure automated checks and monitoring.

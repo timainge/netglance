@@ -1,0 +1,124 @@
+site_name: netglance
+site_url: https://timainge.github.io/netglance/
+site_description: Home network health checks — run by you or your AI
+repo_url: https://github.com/timainge/netglance
+repo_name: timainge/netglance
+
+docs_dir: docs
+
+theme:
+  name: shadcn
+  custom_dir: overrides
+  topbar_sections: true
+  icon: assets/logo.svg
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+
+extra_css:
+  - css/custom.css
+
+extra_javascript:
+  - js/theme-toggle.js
+  - js/mermaid-init.js
+
+nav:
+  - Home: index.md
+  - Guides:
+      - Guides: guide/index.md
+      - Practical Guides:
+          - "What's on My Network?": guide/practical/whats-on-my-network.md
+          - "Is My Internet Slow?": guide/practical/is-my-internet-slow.md
+          - "Am I Being Watched?": guide/practical/am-i-being-watched.md
+          - "Is My Wi-Fi Secure?": guide/practical/is-my-wifi-secure.md
+          - "Set Up Alerts": guide/practical/alerting-in-practice.md
+          - "Keep My Network Healthy": guide/practical/keep-my-network-healthy.md
+      - Concepts:
+          - Basics:
+              - guide/concepts/how-networks-work.md
+              - guide/concepts/arp-and-mac-addresses.md
+              - guide/concepts/ports-and-services.md
+              - guide/concepts/dns-explained.md
+          - Security & Privacy:
+              - guide/concepts/tls-and-certificates.md
+              - guide/concepts/wifi-security.md
+              - guide/concepts/firewalls-and-nat.md
+              - guide/concepts/vpn-fundamentals.md
+          - Deep Dives:
+              - guide/concepts/dhcp-how-it-works.md
+              - guide/concepts/ipv6-primer.md
+              - guide/concepts/device-fingerprinting.md
+              - guide/concepts/network-performance.md
+      - Interpreting Results:
+          - guide/interpreting-results/reading-reports.md
+          - guide/interpreting-results/when-to-worry.md
+          - guide/interpreting-results/common-findings.md
+          - guide/interpreting-results/remediation-playbook.md
+  - Docs:
+      - Documentation: reference/index.md
+      - Getting Started: reference/getting-started.md
+      - Security: reference/security.md
+      - Usage Modes:
+          - reference/usage-modes/index.md
+          - reference/usage-modes/cli.md
+          - reference/usage-modes/mcp.md
+          - reference/usage-modes/daemon.md
+          - reference/usage-modes/dedicated.md
+          - reference/usage-modes/scheduled.md
+      - Discovery & Inventory:
+          - reference/tools/discover.md
+          - reference/tools/scan.md
+          - reference/tools/identify.md
+          - reference/tools/export.md
+          - reference/tools/baseline.md
+      - Connection Testing:
+          - reference/tools/ping.md
+          - reference/tools/speed.md
+          - reference/tools/perf.md
+          - reference/tools/route.md
+          - reference/tools/uptime.md
+          - reference/tools/traffic.md
+      - Security:
+          - reference/tools/dns.md
+          - reference/tools/arp.md
+          - reference/tools/tls.md
+          - reference/tools/http.md
+          - reference/tools/vpn.md
+          - reference/tools/dhcp.md
+          - reference/tools/firewall.md
+          - reference/tools/ipv6.md
+          - reference/tools/wifi.md
+      - Monitoring & Alerts:
+          - reference/tools/report.md
+          - reference/tools/metrics.md
+          - reference/tools/alert.md
+          - reference/tools/daemon.md
+      - Utilities:
+          - reference/tools/wol.md
+      - AI Integration:
+          - reference/tools/mcp.md
+      - Deployment:
+          - reference/deployment/raspberry-pi.md
+          - reference/deployment/mac-mini-daemon.md
+          - reference/deployment/docker.md
+          - reference/deployment/scheduling.md
+      - Disclaimer: reference/disclaimer.md
