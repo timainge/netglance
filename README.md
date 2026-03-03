@@ -1,8 +1,8 @@
 <h1>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/logo-white.svg">
-    <source media="(prefers-color-scheme: light)" srcset="docs/assets/logo.svg">
-    <img src="docs/assets/logo.svg" width="32" height="32" alt="">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/timainge/netglance/main/docs/assets/logo-white.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/timainge/netglance/main/docs/assets/logo.svg">
+    <img src="https://raw.githubusercontent.com/timainge/netglance/main/docs/assets/logo.svg" width="32" height="32" alt="">
   </picture>
   netglance
 </h1>
