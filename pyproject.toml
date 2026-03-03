@@ -2,6 +2,7 @@
 name = "netglance"
 version = "0.1.0"
 description = "Home network health checks — run by you or your AI"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "typer>=0.9",

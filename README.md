@@ -11,7 +11,13 @@
 
 Home network health checks — run by you or your AI.
 
-See every device, check every connection. From your terminal or any MCP-compatible AI assistant.
+A Python toolkit for network discovery, monitoring, and security checks. Use it three ways:
+
+- **CLI** — 30+ commands for scanning, diagnostics, and monitoring straight from your terminal
+- **Library** — import `netglance` modules into your own Python scripts and automations
+- **AI agent** — runs as an MCP server so Claude, Copilot, Cursor, or any MCP-compatible assistant can diagnose your network for you
+
+Covers device discovery (ARP/mDNS), connectivity (ping, speed, jitter, bufferbloat, traceroute), security (DNS leaks, ARP spoofing, TLS, rogue DHCP, firewall), WiFi analysis, port scanning, IoT fingerprinting, and continuous monitoring with alerts.
 
 **[Read the docs](https://timainge.github.io/netglance/)**
 
@@ -40,15 +46,6 @@ netglance dns
 # Measure speed
 netglance speed
 ```
-
-## What it checks
-
-- **Discovery** — ARP/mDNS scanning, device identification, inventory export
-- **Connectivity** — ping, speed tests, jitter, bufferbloat, route tracing
-- **Security** — DNS leaks, ARP spoofing, TLS verification, rogue DHCP, firewall testing
-- **Monitoring** — continuous checks, historical metrics, threshold alerts, daemon mode
-
-30 commands, 1,670 tests. Run them yourself or let an AI agent handle it.
 
 ## Development
 

@@ -25,3 +25,6 @@ Thumbs.db
 *.db
 *.pcap
 site/
+CLAUDE.md
+.claude 
+.dev/**
